@@ -17,8 +17,8 @@ export class AppComponent {
 
   leker() {
     //getData()
-    let x = this.todoService.getData()
-    console.log(x)
+    this.todoService.getData()
+    //console.log(x)
   }
 }
 

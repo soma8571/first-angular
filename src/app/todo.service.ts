@@ -21,7 +21,9 @@ export class TodoService {
     }
 
     getData() {
-        return this.http.get(this.apiUrl).subscribe(data => {return data})
+        this.http.get(this.apiUrl).subscribe(data =>
+            console.log(data)
+        )
     }
 
 }
