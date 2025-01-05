@@ -1,0 +1,34 @@
+<p>Ez a Felhasználó {{username | uppercase}} egyéni oldala</p>
+
+<section>
+    <form class="myForm" [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+        <label for="name">Megnevezés:
+            <input type="text" name="name" id="name" formControlName="name">
+        </label>
+        <label for="place">Hely:
+            <input type="text" name="place" id="place" formControlName="place">
+        </label>
+        <button type="submit">Mentés</button>
+    </form>
+    <!-- <label for="framework">
+        Favorite Framework:
+        <input id="framework" type="text" [(ngModel)]="favFramework" />
+    </label>
+    <button (click)="showFw()">Mutasd</button> -->
+</section>
+
+<!-- <section>
+    <p>{{ username }}'s favorite framework: {{ favFramework }}</p>
+</section> -->
+
+<section>
+<p>
+    {{ carService.getCars() }}
+</p>
+</section>
+
+<section>
+    <nav>
+        <a href="/home">Vissza a főoldalra</a>
+    </nav>
+</section>
